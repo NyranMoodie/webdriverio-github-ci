@@ -1,7 +1,6 @@
 image: atools/chrome-headless:java8-node12-latest
 
 
-
 pipelines:
     default:
       - step:
