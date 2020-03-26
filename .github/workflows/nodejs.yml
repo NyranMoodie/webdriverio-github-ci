@@ -13,13 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: change Folder
-      working-directory: ./automation   
+    - name: switch folders and install dependencies
       run: npm install
-      run: npm test
-      env:
-        CI: true
+      working-directory: automation
+    - name: run tests
+      run: npm test   
+      working-directory: automation
