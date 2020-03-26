@@ -11,12 +11,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: Go to folder and install dependencies
       run: npm install
-      working-directory: tests/Schedular.UI/automation
+      working-directory: tests/Schedular.UI
       
     - name: Run One in BrowserStack
       run: npm run one
-      working-directory: tests/Schedular.UI/automation
+      working-directory: tests/Schedular.UI
 
     - name: Run Two in BrowserStack
       run: npm run one
-      working-directory: tests/Schedular.UI/automation
+      working-directory: tests/Schedular.UI
