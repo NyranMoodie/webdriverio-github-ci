@@ -13,6 +13,7 @@ jobs:
       run: npm install
       working-directory: tests/Schedular.UI/automation
     - name: Run tests in BrowserStack
-      run: npm run one
-      run: npm run two
+      run: | 
+         npm run one
+         npm run two
       working-directory: tests/Schedular.UI/automation
