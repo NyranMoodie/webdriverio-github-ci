@@ -12,9 +12,11 @@ jobs:
     - name: Go to folder and install dependencies
       run: npm install
       working-directory: tests/Schedular.UI/automation
+      
     - name: Run One in BrowserStack
       run: npm run one
       working-directory: tests/Schedular.UI/automation
+
     - name: Run Two in BrowserStack
       run: npm run one
       working-directory: tests/Schedular.UI/automation
